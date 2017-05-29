@@ -1,10 +1,8 @@
-"
-	Test
-"
 p <- c("rafalib", "swirl", "curl", "crayon")
 install.packages(p, dependencies=TRUE)
-library("swirl")
-swirl()
+
+#library("swirl")
+#swirl()
 
 "
   For loop  
@@ -28,9 +26,9 @@ for(i in 1:25){
 print(ans)
 
 avg_dist = 0
-dist_length = length(cars[[2]])
+dist_length = length(cars[,2])
 for(i in 1:dist_length){
-  print(cars[2][i])
-  avg_dist = avg_dist + cars[[2]][i]
+  print(cars[i,2])
+  avg_dist = avg_dist + cars[i,2]
 }
-print(avg_dist)
+print(dist_length)
