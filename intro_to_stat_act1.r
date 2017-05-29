@@ -1,3 +1,6 @@
+"
+	Test
+"
 p <- c("rafalib", "swirl", "curl", "crayon")
 install.packages(p, dependencies=TRUE)
 library("swirl")
